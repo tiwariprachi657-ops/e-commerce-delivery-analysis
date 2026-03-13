@@ -1,0 +1,16 @@
+city,zone,tier
+Mumbai,West,tier_1
+Delhi,North,tier_1
+Bangalore,South,tier_1
+Hyderabad,South,tier_1
+Chennai,South,tier_1
+Pune,West,tier_2
+Ahmedabad,West,tier_2
+Jaipur,North,tier_2
+Lucknow,North,tier_2
+Kolkata,East,tier_2
+Patna,East,tier_3
+Indore,Central,tier_3
+Bhopal,Central,tier_3
+Nagpur,Central,tier_3
+Chandigarh,North,tier_3
