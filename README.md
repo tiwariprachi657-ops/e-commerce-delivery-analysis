@@ -126,10 +126,12 @@ E-Commerce-Delivery-Analysis
 
 ## Dashboard Preview
 
-Add these screenshots to the repository:
-
 - dashboard_overview.png
+<img width="1326" height="747" alt="dashboard_overview" src="https://github.com/user-attachments/assets/86de5733-f029-461b-8815-02baf2f161ec" />
+
+  
 - delivery_operations_dashboard.png
+<img width="1310" height="737" alt="delivery_operations_dashboard" src="https://github.com/user-attachments/assets/bf1fc4b5-30f1-4c1d-990b-c4666b118d8d" />
 
 ---
 
