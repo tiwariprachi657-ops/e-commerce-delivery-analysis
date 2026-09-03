@@ -1,16 +1,26 @@
--- =====================================================
--- A/B Test Conversion Analysis
--- Measures conversion rate for experiment variants
--- =====================================================
+-- A/B test conversion rate by user
+
+WITH user_conversion AS (
+    SELECT
+        variant,
+        user_id,
+        MAX(converted_flag) AS converted
+    FROM ab_test_events
+    GROUP BY variant, user_id
+)
 
 SELECT
     variant,
-    COUNT(user_id) AS total_users,
-    SUM(converted_flag) AS conversions,
+    COUNT(*) AS total_users,
+    SUM(converted) AS converted_users,
+
     ROUND(
-        SUM(converted_flag) * 100.0 / COUNT(user_id),
+        SUM(converted) * 100.0 / COUNT(*),
         2
     ) AS conversion_rate_percent
-FROM ab_test_events
+
+FROM user_conversion
+
 GROUP BY variant
+
 ORDER BY conversion_rate_percent DESC;
